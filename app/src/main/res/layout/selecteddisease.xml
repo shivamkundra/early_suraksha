@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    android:orientation="horizontal">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/selecteddiseasecardview"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="15dp"
+        android:elevation="35dp"
+        app:cardBackgroundColor="@color/white">
+
+        <ImageView
+            android:id="@+id/selecteddiseasepicture"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/clock" />
+
+        <TextView
+            android:id="@+id/selecteddiseasename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:text="Disease1"
+            android:textSize="8dp" />
+        <androidx.cardview.widget.CardView
+            android:layout_width="13dp"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="75dp"
+            android:layout_marginLeft="34dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="45dp">
+
+            <ImageView
+                android:id="@+id/close"
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:background="#B2616161"
+                android:src="@drawable/close" />
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

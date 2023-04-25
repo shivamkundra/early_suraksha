@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.DearOnes">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/AppStatus"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:text="Emergency Contacts"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:layout_marginBottom="50dp"
+        android:textSize="20dp"
+        android:textStyle="bold|italic"/>
+
+    <RelativeLayout
+        android:id="@+id/relativelayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/contact1textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="30dp"
+            android:text="Enter contact 1"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/editremarks1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/edit_image"
+            app:civ_border_color="#0E1C36"
+            app:civ_border_width="1dp"
+            app:civ_circle_background_color="@color/white"
+            tools:ignore="MissingClass"
+            />
+
+
+        <EditText
+            android:id="@+id/contact1"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter contact1"
+            android:layout_marginHorizontal="20dp"
+            android:visibility="gone"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/contact2textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="30dp"
+            android:text="Enter contact 1"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/editremarks2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/edit_image"
+            app:civ_border_color="#0E1C36"
+            app:civ_border_width="1dp"
+            app:civ_circle_background_color="@color/white"
+            tools:ignore="MissingClass" />
+        <EditText
+            android:id="@+id/contact2"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter contact2"
+            android:layout_marginHorizontal="20dp"
+            android:visibility="gone"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/contact3textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="30dp"
+            android:text="Enter contact 1"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/editremarks3"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/edit_image"
+            app:civ_border_color="#0E1C36"
+            app:civ_border_width="1dp"
+            app:civ_circle_background_color="@color/white"
+            tools:ignore="MissingClass" />
+        <EditText
+            android:layout_marginHorizontal="20dp"
+            android:id="@+id/contact3"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter contact3"
+            android:visibility="gone"/>
+    </RelativeLayout>
+    <Button
+        android:id="@+id/savecontacts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="save contacts"
+        android:backgroundTint="#03A9F4"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="40dp"/>
+</LinearLayout>
+
+</FrameLayout>
